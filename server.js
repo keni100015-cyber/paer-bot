@@ -67,7 +67,9 @@ client.on("messageCreate", async (message) => {
     "Recebemos sua mensagem.\nSe for suporte de acesso, encaminharemos ao atendente.\nSe for regra da premiação, consulte a Comissão."
   );
 });
-
+console.log("TOKEN EXISTE?", !!process.env.DISCORD_TOKEN);
+console.log("TAMANHO:", process.env.DISCORD_TOKEN?.length);
 client.login(process.env.DISCORD_TOKEN);
+
 
 
